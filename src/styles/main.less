@@ -1,0 +1,248 @@
+// .weui-toast {
+//     background-image: url(../assets/imgs/loading.gif);
+//     background-repeat: no-repeat;
+//     background-size: 100% 100%;
+//     width: 100px;
+//     margin-left: -50px;
+//     .weui-loading {
+//         display: none;
+//     }
+// }
+.vux-loading-no-text {
+  .weui-toast {
+    top: 50%;
+    width: 32px !important;
+    height: 32px;
+    min-height: 32px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    background-image: url(../assets/imgs/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .weui-loading {
+      display: none;
+    }
+  }
+}
+
+/******* 覆盖vux-alert 样式 ******/
+
+.vux-alert {
+  font-size: 22px;
+}
+
+.vux-1px-b:after {
+  border: none !important;
+}
+.weui-toast {
+  width: auto !important;
+  min-height: 86px;
+  // position: relative;
+  // padding: 10px;
+  .weui-loading {
+    position: absolute;
+    bottom: 10px !important;
+    top: auto !important;
+    left: 36% !important;
+    // transform: translateX(-50%)!important;
+  }
+}
+
+.vux-confirm {
+  font-size: 22px;
+}
+
+.weui-toast_text {
+  .weui-toast__content {
+    padding: 10px;
+  }
+}
+/**** 覆盖input ,select textarea 左侧lable字体 *****/
+
+.weui-label {
+  font-size: 16px;
+}
+
+.weui-icon_toast.weui-loading {
+  margin: 0;
+  top: 28px;
+  position: absolute;
+  left: 28px;
+}
+
+.no-bg .vux-popup-dialog {
+  background: none;
+}
+
+/**** span-box *****/
+
+.span-box {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 46px;
+  border-radius: 23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  color: #666666;
+  border: 1px solid #666666;
+  &:not(:last-child) {
+    margin-right: 38px;
+  }
+}
+
+.span-box.active {
+  color: #ffffff;
+  background-color: #28c76a;
+  border-color: #28c76a;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+/** common tips**/
+
+.common-tip {
+  background-color: #ffefdf;
+  color: #f3484e;
+  .tip-text {
+    min-height: 60px;
+    line-height: 60px;
+    font-weight: 500;
+  }
+  .tip-icon {
+    position: relative;
+    margin-left: 18px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*** warn-title**/
+
+/*********************** switch 样式覆盖 ********************************/
+
+.switch-box {
+  position: relative;
+  .switch-item {
+    position: absolute;
+    top: 50%;
+    margin-top: -10.5px;
+  }
+  .lf-switch {
+    color: #ffffff;
+    right: 34px;
+  }
+  .rg-switch {
+    right: 10px;
+  }
+}
+
+.weui-switch,
+.weui-switch-cp__box {
+  width: 60px !important;
+}
+
+.weui-switch:before,
+.weui-switch-cp__box:before {
+  width: 58px !important;
+}
+
+.weui-switch:checked:after,
+.weui-switch-cp__input:checked ~ .weui-switch-cp__box:after {
+  transform: translateX(28px) !important;
+}
+
+.weui-switch:checked,
+.weui-switch-cp__input:checked ~ .weui-switch-cp__box {
+  border-color: #28c76a !important;
+  background-color: #28c76a !important;
+}
+
+/*** dtCusDetail.vue 样式覆盖 *****/
+
+.custdetail-page {
+  .weui-cell:before,
+  .weui-cell:after {
+    visibility: hidden;
+  }
+}
+
+//覆盖vux地址样式
+.vux-popup-header-right {
+  color: #28c76a !important;
+}
+
+.weui-dialog .weui-dialog__btn_primary,
+.weui-dialog .weui-dialog__btn {
+  color: #28c76a;
+}
+
+/*** policy-make-page && policy-details-page 样式覆盖 ***/
+.policy-make-page,
+.policy-details-page {
+  .weui-select {
+    color: #666;
+    font-size: 0.04rem;
+    border: 1px #dddddd solid;
+    border-radius: 6px;
+    height: 0.1rem;
+    line-height: 0.1rem;
+  }
+  .select_death {
+    .weui-cells {
+      width: 0.6rem;
+      font-size: 0.04rem;
+    }
+    .weui-cell__bd {
+      width: 0.4rem;
+    }
+    .weui-input {
+      line-height: 0.08rem;
+      height: 0.08rem;
+      width: 0.4rem;
+    }
+    .weui-label {
+      font-size: 0.04rem;
+    }
+  }
+}
+.policy-details-page {
+  .weui-select {
+    border: none;
+  }
+}
+
+.vux-datetime-clear {
+  color: #333333 !important;
+}
+.dp-header .dp-item.dp-left {
+  color: #04be02 !important;
+}
+
+.card-seeDynam-page {
+  .vux-header {
+    background-color: transparent;
+  }
+}
+.img-previewer {
+  // .pswp--supports-fs .pswp__button--fs{
+  //   display: none;
+  // }
+  // .pswp__button--close{
+  //   display: none
+  // }
+  .pswp--supports-fs .pswp__button--fs {
+    display: none;
+  }
+  .pswp__top-bar {
+    height: 60px;
+  }
+  .pswp__counter {
+    font-size: 40px;
+  }
+  .pswp__button--close {
+    display: none;
+  }
+}
